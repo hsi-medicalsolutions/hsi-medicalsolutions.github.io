@@ -27,7 +27,7 @@ email: eduardo.lopezarce@gmail.com
 		<script type="text/javascript" src="../../js/modernizr.custom.79639.js"></script> 
 		<script src="../../js/modernizr.custom.js"></script>
 		<script type="text/javascript">
-			$('#main').load(function() {
+			$(document).ready(function() {
 				$("#menu").load("../html/menu.html");
 				$("#footer").load("../html/footer.html");
 			});
@@ -59,8 +59,17 @@ email: eduardo.lopezarce@gmail.com
 
 			<section class="cbp-so-section" style = "margin-top: 40px; padding-bottom: 50px">
 				<article class="cbp-so-side cbp-so-side-right">
+				</article>
+			</section>
+			<section class="cbp-so-section" style = "margin-top:10px;">
+				<article class="cbp-so-side cbp-so-side-right">
+					<div id = "footer"></div>
+				</article>
+			</section>
+		</div>
+		
 					<!--=========TEXT BOXES==========-->	
-					<section id = "main"class="main">			
+					<section class="main">			
 						<ul class="ch-grid">
 							<li>
 								<div class="ch-item ch-img-1">				
@@ -122,14 +131,6 @@ email: eduardo.lopezarce@gmail.com
 							</li>
 						</ul>				
 					</section><!--END TEXT BOXES-->
-				</article>
-			</section>
-			<section class="cbp-so-section" style = "margin-top:10px;">
-				<article class="cbp-so-side cbp-so-side-right">
-					<div id = "footer"></div>
-				</article>
-			</section>
-		</div>
 		
 		<script src="../../js/classie.js"></script>
 		<script src="../../js/cbpScroller.js"></script>
