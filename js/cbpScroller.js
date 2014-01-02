@@ -9,6 +9,10 @@
  * http://www.codrops.com
  */
 ;( function( window ) {
+			ready(function() {
+				$("#menu").load("../html/menu.html");
+				$("#footer").load("../html/footer.html");
+			});	
 	
 	'use strict';
 
