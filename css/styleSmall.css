@@ -588,7 +588,7 @@ ul#navmenu li:hover .sub1{
 	margin: 10px auto;
 	padding: 50px;
 	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px
+	-moz-border-radius: 30px;
 	border-radius: 30px;
 
 	background-color: rgba(3,3,3,0.9);
