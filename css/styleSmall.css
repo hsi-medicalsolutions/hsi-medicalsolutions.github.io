@@ -592,10 +592,10 @@ ul#navmenu li:hover .sub1{
 	border-radius: 30px;
 
 	background-color: rgba(3,3,3,0.9);
-	-moz-box-shadow:    inset  -15px  15px 15px -8px #696868,
-                        inset  -15px -15px 15px -8px #696868;
-    -webkit-box-shadow: inset  -15px  15px 15px -8px #696868,
-                        inset  -15px -15px 15px -8px #696868;
+	-moz-box-shadow:    inset    0px   0px 15px  8px #696868,
+                        inset    0px   0px 15px  8px #696868;
+    -webkit-box-shadow: inset    0px   0px 15px  8px #696868,
+                        inset    0px   0px 15px  8px #696868;
      box-shadow:        inset    0px   0px 15px  8px #696868,
                         inset    0px   0px 15px  8px #696868;
 }
