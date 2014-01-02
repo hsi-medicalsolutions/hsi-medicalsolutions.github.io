@@ -693,11 +693,11 @@ ul#navmenu li:hover .sub1{
 /****************************************/
 /* container */
 .cbp-so-side-right .section-content{
+	width: 80%;
 	float: center;
 	text-align:center;
 	margin: 10px auto;
 	padding: 50px;
-	margin-left: 10%;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px
 	border-radius: 30px;

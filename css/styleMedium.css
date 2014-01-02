@@ -577,6 +577,42 @@ ul#navmenu li:hover .sub1{
 	float: none;
 	width: 48px;
 }
+/****************************************/
+/***********CONTENT IN SECTIONS**********/
+/****************************************/
+/* container */
+.cbp-so-side-right .section-content{
+	width: 868.5px;
+	float: center;
+	text-align:center;
+	margin: 10px auto;
+	padding: 50px;
+	margin-left: 96.5px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px
+	border-radius: 30px;
+
+	background-color: rgba(3,3,3,0.9);
+	-moz-box-shadow:    inset  -15px  15px 15px -8px #696868,
+                        inset  -15px -15px 15px -8px #696868;
+    -webkit-box-shadow: inset  -15px  15px 15px -8px #696868,
+                        inset  -15px -15px 15px -8px #696868;
+     box-shadow:        inset    0px   0px 15px  8px #696868,
+                        inset    0px   0px 15px  8px #696868;
+}
+/* Text inside container*/
+.cbp-so-side-right .section-content h5{
+	padding-right: 10px;
+	font-size: 22px;
+	color: #ddd;
+	margin: 10px auto; 
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: left;
+}
+/****************************************/
+/*************SOCIAL MEDIA***************/
+/****************************************/
 .facebook{
 	width: 48px;
 	height:48px;
