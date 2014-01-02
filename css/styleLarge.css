@@ -693,22 +693,36 @@ ul#navmenu li:hover .sub1{
 /****************************************/
 /* container */
 .cbp-so-side-right .section-content{
-	padding: 10px;
-	margin: 10px 0px;
-	-webkit-border-top-left-radius: 30px;
-	-webkit-border-bottom-left-radius: 30px;
-	-moz-border-radius-topleft: 30px;
-	-moz-border-radius-bottomleft: 30px;
-	border-top-left-radius: 30px;
-	border-bottom-left-radius: 30px;
+	float: center;
+	text-align:center;
+	margin: 10px auto;
+	padding: 50px;
+	margin-left: 10%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px
+	border-radius: 30px;
 
 	background-color: rgba(3,3,3,0.9);
 	-moz-box-shadow:    inset  -15px  15px 15px -8px #696868,
                         inset  -15px -15px 15px -8px #696868;
     -webkit-box-shadow: inset  -15px  15px 15px -8px #696868,
                         inset  -15px -15px 15px -8px #696868;
-     box-shadow:        inset    0px   0px 15px  8px #696868;
+     box-shadow:        inset    0px   0px 15px  8px #696868,
+                        inset    0px   0px 15px  8px #696868;
 }
+/* Text inside container*/
+.cbp-so-side-right .section-content h5{
+	padding-right: 10px;
+	font-size: 22px;
+	color: #ddd;
+	margin: 10px auto; 
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: left;
+}
+/****************************************/
+/*************SOCIAL MEDIA***************/
+/****************************************/
 .facebook{
 	width: 48px;
 	height:48px;
