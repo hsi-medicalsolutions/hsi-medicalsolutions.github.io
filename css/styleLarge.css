@@ -542,6 +542,8 @@ ul#navmenu li:hover .sub1{
 .cbp-so-section h4 {
 	text-align: center;
 	font-size: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
 	color: #00A8CB;
 }
 
@@ -550,6 +552,8 @@ ul#navmenu li:hover .sub1{
 	font-size: 22px;
 	color: #ddd;
 	margin: 10px auto; 
+	margin-left: 10px;
+	margin-right: 10px;
 	text-align: left;
 }
 .cbp-so-section .cbp-so-side-right h5 {
@@ -557,6 +561,8 @@ ul#navmenu li:hover .sub1{
 	font-size: 22px;
 	color: #ddd;
 	margin: 10px auto; 
+	margin-left: 10px;
+	margin-right: 10px;
 	text-align: right;
 }
 
@@ -665,6 +671,10 @@ ul#navmenu li:hover .sub1{
 }
 
 .cbp-so-side-right img {
+	float: right;
+	width: 100%;
+}
+.cbp-so-side-left img {
 	float: left;
 	width: 100%;
 }

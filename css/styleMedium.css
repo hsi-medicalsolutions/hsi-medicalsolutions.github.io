@@ -16,42 +16,51 @@ body{
 }
 /* rules for Anchor*/
 a{
-	outline:none;
 	text-decoration: none;
+	outline:none;
 }
-/********RULES FOR TABLE WITH CONTENT MENU********/
+/********RULES FOR TABLE WITH MENU CONTENT********/
 #tabmenu{
-	text-align:center;
-	margin-bottom: 20px;
-	border-bottom: 5px solid #00a8cb;
-	border-top: 5px solid #00a8cb;
-	-moz-box-shadow:    inset  0  8px 8px -8px #696868, 
-                        inset  0 -8px 8px -8px #696868;
-    -webkit-box-shadow: inset  0  8px 8px -8px #696868, 
-                        inset  0 -8px 8px -8px #696868;
-     box-shadow:        inset  0  8px 8px -8px #696868, 
-                        inset  0 -8px 8px -8px #696868;
-	position: relative;
+	text-align:center;	
+	width: 965px;
+	background-color: rgba(3,3,3,0.9);
+	-moz-box-shadow:    inset  0  15px 15px -8px #696868, 
+                        inset  0 -15px 15px -8px #696868;
+    -webkit-box-shadow: inset  0  15px 15px -8px #696868, 
+                        inset  0 -15px 15px -8px #696868;
+     box-shadow:        inset  0  15px 15px -8px #696868, 
+                        inset  0 -15px 15px -8px #696868;
+	position: absolute;
 	z-index: 2;
-}	
+}
 /********RULES FOR LOGO********/
 /* rules for logo*/
 .logo {
-	width: 120px;
-	height: 70px;
+	width: 150px;
 	text-align: center;
-	text-decoration: none;
+	margin: auto;
+	padding: auto;
+}
+/* rules main title in logo*/
+.logo #logo1 a{
+	font-size: 40px;
+	color: #00A8CB;	
+	text-shadow: 0px 2px 3px #555;
+}
+/* rules main title in logo*/
+.logo #logo2 a{
+	font-size: 10px;
+	color: #ccc;		
 }
 /* rules for logo IMAGE*/
 .logo img{
-	width: 119px;
-	height: 70px;
+	width: 150px;
+	height: 80px;
 }
 /********RULES FOR NAVIGATION MENU********/
 /* rules for all UNORDERED lists*/
 ul#navmenu, ul.sub1{
 	list-style-type:none;
-	text-align:center;
 	font-family: Helvetica, arial, sans-serif;
 	font-size: 14px;
 	/*outline: 1px solid red;*/
@@ -59,20 +68,20 @@ ul#navmenu, ul.sub1{
 /* rules for MAIN LIST item*/
 ul#navmenu li{
 	/*border: 1px solid red;*/
-	width: 24%;
-	text-align: center;
 	position: relative; /*very important step*/
-	float: left;
+	float: right;
 	margin-right: 1%;
+	margin-bottom: -10px;
 }
 /* rules for MAIN ANCHOR element*/
 ul#navmenu a{
 	font-weight: bold;
 	text-decoration: none;
 	display: block;
-	line-height: 25px;
-	color: #002F64;	
-	text-align: center;
+	color: #ddd;/*#002F64;*/
+	text-align: center;		
+	margin: 20px 20px;
+	padding-bottom: 10px;
 }
 /* rules for ALL ANCHOR element -> MAIN LI hover*/
 ul#navmenu li:hover >a{
@@ -80,20 +89,27 @@ ul#navmenu li:hover >a{
 }
 /* rules for SUB unordered lists*/
 ul#navmenu ul.sub1{
-	font-size: 13px;
+	margin-top: -5px;
 	display: none;
 	position: absolute;
-	width: 100%;
+	z-index: 2;
+	width: 220%;
 	left: auto;
-	right: auto;
-	background-color: rgba(00,10,47,0.9);
+	right: auto;	
+	margin-left: -55%;
+	background-color: rgba(3,3,3,0.9);
 	-webkit-border-radius: 0px 15px 0px 15px;
 	-moz-border-radius: 0px 15px 0px 15px;
 	border-radius: 0px 15px 0px 15px;
+	-moz-box-shadow:    inset  0  15px 15px -8px #696868, 
+                        inset  0 -15px 15px -8px #696868;
+    -webkit-box-shadow: inset  0  15px 15px -8px #696868, 
+                        inset  0 -15px 15px -8px #696868;
+     box-shadow:        inset  0  15px 15px -8px #696868, 
+                        inset  0 -15px 15px -8px #696868;
 }
 /* rules for SUB LIST item*/
 ul#navmenu .sub1 li{
-	color: #FFF;
 	width: 100%;
 	-webkit-border-radius: 0px 15px 0px 15px;
 	-moz-border-radius: 0px 15px 0px 15px;
@@ -102,14 +118,14 @@ ul#navmenu .sub1 li{
 }
 /* rules for SUB ANCHOR element*/
 ul#navmenu .sub1 a{
-	color: #FFF;
+	color: #ddd;
 	width: 100%;
-	margin-top: 0px;
+	margin: 5px auto;
 	-webkit-border-radius: 0px 15px 0px 15px;
 	-moz-border-radius: 0px 15px 0px 15px;
 	border-radius: 0px 15px 0px 15px;
 }
-/* rules for SUB ANCHOR element -> SUB A and LI hover*/
+/* rules for SUB ANCHOR element -> SUB A and LI hover
 ul#navmenu .sub1 li:hover a:hover{
 	background-color: #FFF;
 	width: 100%;
@@ -119,230 +135,210 @@ ul#navmenu .sub1 li:hover a:hover{
 ul#navmenu li:hover .sub1{
 	display: block;
 }
-/*************RULES FOR FLAGS********************/
+/**********RULES FOR FLAGS**********/
 #flags{
-	margin:0 auto;	
-	background-repeat:no-repeat;
+	margin: auto;
+	padding-top: 10px;	
+	/*background-repeat:no-repeat;
 	position:absolute;
-	top: 5px;
+	padding-bottom: 50px;
+	/*top: 5px;
 	right: 5px;
-	background-position:0 top right;
+	background-position:0 top right;*/
+}
+#flags img{
+	margin: 0 2px;
 }
 #flags a span{
 	display:none;
 } 
-/********RULES FOR IMAGE IN SECTION DISPLAY********/
-/* rules for table with section display*/
-#tabsection{
-	text-align:center;
-	background: #000;	
-	color: #00A8CB;/*(00,169,203) o 002F64 -(00,47,10)*/
-	font-size: 60px;
-}	
-/* rules for image in section display*/
-div.img
-{
-	margin:0px;
-	padding: 0px;
-	float:left;
-	text-align:left;
-	background: #000;
-}
-/********RULES FOR TEXT WITHIN SECTION********/
-/* rules for header*/
-.header {
-	padding: 0px;
-}
-/* rules for content in header*/
-.contentheader {
-	text-align: left;
-	font-family: Helvetica, arial, sans-serif;
-	font-size: 20px;
-	font-weight: bold;
-	color: #00A8CB;
-}
-/* rules for content in text*/
-.contenttext {
-	text-align: justify;
-	font-family: Helvetica, arial, sans-serif;
-	font-size: 14px;
-}
-/********RULES FOR IMAGE SLIDER********/
-/*rules for all the content in text and image slider*/
-.wrapper{
-	width: 870px;
-	margin: 0 auto;
-	/*outline: 1px solid red;*/
-}
-/*Rules for image slider container*/
-#slider{
-	width: 400px;
-	height: 320px;
-	overflow: hidden;
-	margin: 0px auto;
-}
-/*Rules for image slider images*/
-#slider > img{
-	position: relative;
-	z-index: 1;
-	width: 395px;
-	height: 320px;
-	float: left;
-	display: none;
-}
-/*Rules for previous and next button (ANCHOR)*/
-.wrapper a{
-	padding: 5px 0px;
-	background-color: #FFF;
-	margin-top: 30px;
-	text-decoration: none;
-	color: #666;
-	outline:none;
-	width: 50px;
-	position: relative;
-	font-size: 50px;
-}
-/*Rules for left button*/
-.left a{
-	float: left;
-}
-/*Rules for right button*/
-.right a{
-	float: right;
-}
-/*Rules for left button while hover*/
-.left a:hover{
-	font-size: 60px;
-	color: #00A8CB;
-}
-/*Rules for right button while hover*/
-.right a:hover{
-	font-size: 60px;
-	color: #00A8CB;
-}
-/***********RULES FOR TEXT SLIDER****************/
-/* rules for all content in slider*/
-.main-content{
-	width: 330px;
-	height: 340px;
-	background-color: #FFF;
-	font-family: Arial, Helvetica;
-	text-align: left;
-	/*outline: 1px solid red;*/
-}
-/* rules for heading and paragraph text*/
-.content-switcher{
-	display: none;
-	/*outline: 1px solid red;*/
-}
-/* rules for heading text */
-.content-switcher .head{
-	margin: none;
-	font-size: 40px;
-	border-bottom: none;
-	width: 330px;
-	margin: 0px;
-	color: #00A8CB;
-}
-/* rules for paragraph text */
-.content-switcher p{
-	font-size: 20px;
-	color: #707276;
-	margin: 10px auto; 
-}
-/* rules for first text*/
-.content-switcher:first-child{
-	display:block;
-}
-/* rules for READ MORE BUTTON container*/
-.content-switcher-read{
-	padding-top: 10px;
-	width: 330px;
-	height: 100px;
-	margin: auto;
-	color: #00A8CB;
-	display: none;
-	/*outline: 1px solid red;*/
-}
-/* rules for READ MORE BUTTON */
-.content-switcher-read a{
-	text-align: center;
-	height: 20px;
-	font-size: 13px;
-	width: 150px;
-	box-shadow: 4px 4px 4px #888888;
-	background-color: #00A8CB;
-	border-radius: 15px;
-	color: #FFF;
-	text-decoration: none;
-	outline: none;
-	font-weight: bold;
-}
 /***********RULES FOR TEXT BOXES**************/
 /* rules for text boxes container */
-#textBoxes{
-	width: 850px;
-	height: 200px;
-	margin: 0 auto;
-	padding-left: 50px;
-	margin-bottom: 30px;
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 965px;
 }
-/* general rules for textboxes*/ 
-#textBoxes .textBox{
-	margin: 0px auto;
-	margin-top: -130px;
-	width: 230px;
-	height: 230px;
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin: 20px;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	cursor: default;
+}
+
+.ch-info-wrap{
 	position: absolute;
-	z-index: 2;
-	border-radius: 15px;
-	background-color: #00A8CB;
-	-moz-box-shadow: 5px 5px 5px #696868;
-	-webkit-box-shadow: 5px 5px 5px #696868;
-	box-shadow: 5px 5px 5px #696868;
-}
-/* rules for textbox with heading and paragraph*/ 
-#textBoxes .inBox1{
-	padding-top: 10px;
 	width: 180px;
-	height: 80px;
-	text-align:left;
+	height: 180px;
+	border-radius: 50%;
+
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-o-perspective: 800px;
+	-ms-perspective: 800px;
+	perspective: 800px;
+
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+
+	top: 20px;
+	left: 20px;
+	background: #00A8CB;
+	box-shadow: 
+		0 0 0 20px rgba(255,255,255,0.2), 
+		inset 0 0 4px rgba(115,114, 23, 0.8);
 }
-/* rules for heading*/ 
-#textBoxes .inBox1 h1{
+
+.ch-info{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+		
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+}
+
+.ch-info > div {
+	display: block;
+	position: absolute;
+	width: 102%;
+	height: 102%;
+	left: -1%;
+	top: -1%;
+	border-radius: 50%;
+	background-position: center center;
+
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+
+.ch-info .ch-info-back {
+	-webkit-transform: rotate3d(0,1,0,180deg);
+	-moz-transform: rotate3d(0,1,0,180deg);
+	-o-transform: rotate3d(0,1,0,180deg);
+	-ms-transform: rotate3d(0,1,0,180deg);
+	transform: rotate3d(0,1,0,180deg);
+	
+	background-color: #333;
+}
+/* rules for front textbox background 1 */
+.ch-img-1 { 
+	background-image: url(../images/10.jpg);
+}
+/* rules for front textbox background 2 */
+.ch-img-2 { 
+	background-image: url(../images/11.jpg);
+}
+/* rules for front textbox background 3 */
+.ch-img-3 { 
+	background-image: url(../images/12.jpg);
+}
+/* rules for front header*/
+.ch-info h1 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0 auto;
+	padding: 78px 0 0 0;
+	height: 40px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	color: white;
+	text-shadow: 1px 1px #000, -1px -1px #000;
+}
+/* rules for back header */
+.ch-info h3 {
+	color: #00A8CB;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 15px;
+	padding:50px 0 0 0;
+	margin-bottom: -15px;
+	height: 40px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+/* rules for back info */
+.ch-info p {
 	color: #fff;
-	font-size: 26px;
-	margin-bottom: 3px;
-	text-shadow: 0px 2px 3px #555;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	padding-bottom: 60px;
 }
-/* rules for paragraph*/ 
-#textBoxes .inBox1 p{
-	color: #333;
-	font-size: 13px;
-	text-shadow: none;
+
+.ch-item:hover .ch-info-wrap {
+	box-shadow: 
+		0 0 0 0 rgba(255,255,255,0.8), 
+		inset 0 0 3px rgba(115,114, 23, 0.8);
 }
-/* rules for textbox with image*/ 
-#textBoxes .inBox2{
-	width: 65px;
-	height: 110px;
-	text-align:left;
-	color: #FFF;
-}
-/* rules for textbox with description*/ 
-#textBoxes .inBox3{
-	width: 125px;
-	height: 110px;
-	font-size: 13px;
-	text-align:left;
-	color: #333;
+
+.ch-item:hover .ch-info {
+	-webkit-transform: rotate3d(0,1,0,-180deg);
+	-moz-transform: rotate3d(0,1,0,-180deg);
+	-o-transform: rotate3d(0,1,0,-180deg);
+	-ms-transform: rotate3d(0,1,0,-180deg);
+	transform: rotate3d(0,1,0,-180deg);
 }
 /***********RULES FOR FOOTER**************/
 /* rules for all content in footer */
 .footer{
 	margin: 0px auto;
-	height: 200px;
-	width: 100%;
-	background: rgb(84,89,98);
+	margin-top: 30px;
+	padding-top: 40px;	
+	width: 965px;
+	background-color: rgba(3,3,3,0.9);
+	-moz-box-shadow:    inset  0  15px 15px -8px #696868, 
+                        inset  0  15px 15px -8px #696868;
+    -webkit-box-shadow: inset  0  15px 15px -8px #696868, 
+                        inset  0  15px 15px -8px #696868;
+     box-shadow:        inset  0  15px 15px -8px #696868, 
+                        inset  0  15px 15px -8px #696868;
 	color: #FFF;
 	text-align: justify;
 	font-size: 13px;
@@ -360,7 +356,6 @@ div.img
 }
 /* rules for subheading elements in footer */
 .footer a{
-	width: 32%;
 	color: rgb(198,198,198);
 }
 /* rules for subheading in footer while hover */
@@ -371,8 +366,281 @@ div.img
 .subfooter{
 	margin: 0px auto;
 	width: 100%;
-	height: 30px;
+	height: 50px;
+	text-align: right;
+	padding-bottom: 10px;
 	font-size: 12px;
-	background-color: #333;
+	background-color: rgba(3,3,3,0.9);
+	-moz-box-shadow:    inset  0 -15px 15px -8px #696868, 
+                        inset  0 -15px 15px -8px #696868;
+    -webkit-box-shadow: inset  0 -15px 15px -8px #696868, 
+                        inset  0 -15px 15px -8px #696868;
+     box-shadow:        inset  0 -15px 15px -8px #696868, 
+                        inset  0 -15px 15px -8px #696868;
 	color: #FFF;
+}
+/***********RULES FOR SCROLLER**************/
+.cbp-so-scroller {
+	margin: 0;
+	overflow: hidden;	
+	width: 965px;
+}
+
+.cbp-so-section {
+	margin: 0;
+	margin-top:95px; 	
+	width: 965px;
+}
+.cbp-so-side-left .text-scroller{
+	padding: 10px;
+	margin: 10px 0px;
+	-webkit-border-top-right-radius: 30px;
+	-webkit-border-bottom-right-radius: 30px;
+	-moz-border-radius-topright: 30px;
+	-moz-border-radius-bottomright: 30px;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+
+	background-color: rgba(3,3,3,0.9);
+	-moz-box-shadow:    inset  -15px  15px 15px -8px #696868,
+                        inset  -15px -15px 15px -8px #696868;
+    -webkit-box-shadow: inset  -15px  15px 15px -8px #696868,
+                        inset  -15px -15px 15px -8px #696868;
+     box-shadow:        inset  -15px  15px 15px -8px #696868,
+                        inset  -15px -15px 15px -8px #696868;
+}
+.cbp-so-side-right .text-scroller{	
+	width: 482.5px;
+	padding: 10px;
+	margin: 10px 0px;
+	-webkit-border-top-left-radius: 30px;
+	-webkit-border-bottom-left-radius: 30px;
+	-moz-border-radius-topleft: 30px;
+	-moz-border-radius-bottomleft: 30px;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+
+	background-color: rgba(3,3,3,0.9);
+	-moz-box-shadow:    inset  -15px  15px 15px -8px #696868,
+                        inset  -15px -15px 15px -8px #696868;
+    -webkit-box-shadow: inset  -15px  15px 15px -8px #696868,
+                        inset  -15px -15px 15px -8px #696868;
+     box-shadow:        inset   15px  15px 15px -8px #696868,
+                        inset   15px -15px 15px -8px #696868;
+}
+/* Text styling */
+.cbp-so-section h4 {
+	text-align: center;
+	font-size: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #00A8CB;
+}
+
+.cbp-so-section .cbp-so-side-left h5 {
+	padding-left: 10px;
+	font-size: 22px;
+	color: #ddd;
+	margin: 10px auto; 
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: left;
+}
+.cbp-so-section .cbp-so-side-right h5 {
+	padding-right: 10px;
+	font-size: 22px;
+	color: #ddd;
+	margin: 10px auto; 
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: right;
+}
+
+/* rules for left READ MORE BUTTON container*/
+.cbp-so-section .cbp-so-side-left h6{
+	padding-top: 10px;
+	margin-bottom: 30px;
+	margin-right: 30px;
+	color: #00A8CB;
+	/*outline: 1px solid red;*/
+}
+/* rules for right READ MORE BUTTON container*/
+.cbp-so-section .cbp-so-side-right h6{
+	padding-top: 10px;
+	margin-bottom: 30px;
+	margin-left: 30px;
+	color: #00A8CB;
+	/*outline: 1px solid red;*/
+}
+/* rules for READ MORE BUTTON */
+.cbp-so-section h6 a{
+	text-align: center;
+	height: 20px;
+	font-size: 13px;
+	width: 150px;
+	background-color: #00A8CB;
+	border-radius: 15px;
+	color: #FFF;
+	text-decoration: none;
+	outline: none;
+	font-weight: bold;
+	padding: 10px;
+}
+/* rules for left READ MORE BUTTON on hover*/
+.cbp-so-section .cbp-so-side-left h6 a:hover{
+	text-align: center;
+	height: 20px;
+	font-size: 13px;
+	width: 200px;
+	margin-bottom: 4px;
+	margin-right:4px;
+	box-shadow: 4px 4px 4px #686868;
+	background-color: #00A8CB;
+	border-radius: 15px;
+	color: #FFF;
+	text-decoration: none;
+	outline: none;
+	font-weight: bold;
+}
+/* rules for right READ MORE BUTTON on hover*/
+.cbp-so-section .cbp-so-side-right h6 a:hover{
+	text-align: center;
+	height: 20px;
+	font-size: 13px;
+	width: 200px;
+	margin-bottom: 4px;
+	margin-left:4px;
+	box-shadow: -4px 4px 4px #686868;
+	background-color: #00A8CB;
+	border-radius: 15px;
+	color: #FFF;
+	text-decoration: none;
+	outline: none;
+	font-weight: bold;
+}
+
+/* Clear floats of children */
+.cbp-so-section:before,
+.cbp-so-section:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-so-section:after {
+	clear: both;
+}
+
+/* Sides */
+.cbp-so-side {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	-moz-transition: -moz-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+/* Clear floats of children */
+.cbp-so-side:before,
+.cbp-so-side:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-so-side:after {
+	clear: both;
+}
+
+.cbp-so-side-right {
+	text-align: left;
+}
+
+.cbp-so-side-left {
+	text-align: right;
+}
+
+.cbp-so-side-right img {
+	float: right;
+	width: 100%;
+}
+.cbp-so-side-left img {
+	float: left;
+	width: 100%;
+}
+
+.cbp-so-side-left .footer img {
+	float: right;
+	width: 100%;
+}
+.cbp-so-side-right p img {
+	float: none;
+	width: 48px;
+}
+.facebook{
+	width: 48px;
+	height:48px;
+	display: inline-block;
+    *display: inline;
+	background:transparent url('../images/facebook.png') center top no-repeat;
+}
+.facebook:hover{
+	background-image: url('../images/facebook2.png');
+}
+.youtube{
+	width: 48px;
+	height:48px;
+	display: inline-block;
+    *display: inline;
+	background:transparent url('../images/youtube.png') center top no-repeat;
+}
+.youtube:hover{
+	background-image: url('../images/youtube2.png');
+}
+.linkedin{
+	width: 48px;
+	height:48px;
+	display: inline-block;
+    *display: inline;
+	background:transparent url('../images/linkedin.png') center top no-repeat;
+}
+.linkedin:hover{
+	background-image: url('../images/linkedin2.png');
+}
+.twitter{
+	width: 48px;
+	height:48px;
+	display: inline-block;
+    *display: inline;
+	background:transparent url('../images/twitter.png') center top no-repeat;
+}
+.twitter:hover{
+	background-image: url('../images/twitter2.png');
+}
+
+/* Initial state (hidden or anything else) */
+.cbp-so-init .cbp-so-side {
+	opacity: 0;
+}
+
+.cbp-so-init .cbp-so-side-left {
+	-webkit-transform: translateX(-80px);
+	-moz-transform: translateX(-80px);
+	transform: translateX(-80px);
+}
+
+.cbp-so-init .cbp-so-side-right {
+	-webkit-transform: translateX(80px);
+	-moz-transform: translateX(80px);
+	transform: translateX(80px);
+}
+
+/* Animated state */
+/* add you final states (transition) or your effects (animations) for each side */
+.cbp-so-section.cbp-so-animate .cbp-so-side-left,
+.cbp-so-section.cbp-so-animate .cbp-so-side-right {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+	opacity: 1;
 }
