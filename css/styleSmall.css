@@ -601,6 +601,7 @@ ul#navmenu li:hover .sub1{
 }
 /* Text inside container*/
 .cbp-so-side-right .section-content h5{
+	width: 100%;
 	font-size: 22px;
 	color: #ddd;
 	margin: 10px auto; 
