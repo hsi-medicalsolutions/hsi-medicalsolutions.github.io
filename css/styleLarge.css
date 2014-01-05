@@ -692,7 +692,7 @@ ul#navmenu li:hover .sub1{
 /***********CONTENT IN SECTIONS**********/
 /****************************************/
 /* container */
-.cbp-so-side-right .section-content{
+.section-content{
 	width: 80%;
 	float: center;
 	text-align:center;
@@ -711,7 +711,7 @@ ul#navmenu li:hover .sub1{
                         inset    0px   0px 15px  8px #696868;
 }
 /* Text inside container*/
-.cbp-so-side-right .section-content h5{
+.section-content h5{
 	padding-right: 10px;
 	font-size: 22px;
 	color: #ddd;
