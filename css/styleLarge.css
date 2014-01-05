@@ -723,6 +723,14 @@ ul#navmenu li:hover .sub1{
 .section-content ul{
 	text-align: left;
 }
+.section-content h5 a{
+	text-decoration: none;
+	color: #00A8CB;
+}
+.section-content h5 a:hover{
+	font-size: 24px;
+	position: absolute;
+}
 /****************************************/
 /*************SOCIAL MEDIA***************/
 /****************************************/
