@@ -600,7 +600,13 @@ ul#navmenu li:hover .sub1{
                         inset    0px   0px 15px  8px #696868;
 }
 /* Text inside container*/
-.section-content h5{
+.cbp-so-side-left .section-content h5{
+	font-size: 22px;
+	color: #ddd;
+	margin: 10px;
+	text-align: left;
+}
+.cbp-so-side-right .section-content h5{
 	font-size: 22px;
 	color: #ddd;
 	margin: 10px;
