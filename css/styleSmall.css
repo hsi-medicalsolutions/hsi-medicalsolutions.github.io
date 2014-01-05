@@ -601,12 +601,15 @@ ul#navmenu li:hover .sub1{
 }
 /* Text inside container*/
 .cbp-so-side-right .section-content h5{
-	width: 100%;
 	font-size: 22px;
 	color: #ddd;
-	margin: 10px auto; 
-	margin-left: 10px;
-	margin-right: 10px;
+	margin: 10px;
+	text-align: left;
+}
+.cbp-so-side-right .section-content .div-h5{
+	font-size: 22px;
+	color: #ddd;
+	margin: 10px;
 	text-align: left;
 }
 /****************************************/
