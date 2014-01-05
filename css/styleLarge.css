@@ -720,6 +720,9 @@ ul#navmenu li:hover .sub1{
 	margin-right: 10px;
 	text-align: left;
 }
+.section-content ul{
+	text-align: left;
+}
 /****************************************/
 /*************SOCIAL MEDIA***************/
 /****************************************/
