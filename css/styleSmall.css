@@ -75,7 +75,8 @@ ul#navmenu li{
 }
 /* rules for MAIN ANCHOR element*/
 ul#navmenu a{
-	font-weight: bold;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 17px;
 	text-decoration: none;
 	display: block;
 	color: #ddd;/*#002F64;*/
@@ -438,6 +439,8 @@ ul#navmenu li:hover .sub1{
 }
 
 .cbp-so-section .cbp-so-side-left h5 {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: normal;
 	padding-left: 10px;
 	font-size: 22px;
 	color: #ddd;
@@ -447,6 +450,8 @@ ul#navmenu li:hover .sub1{
 	text-align: left;
 }
 .cbp-so-section .cbp-so-side-right h5 {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: normal;
 	padding-right: 10px;
 	font-size: 22px;
 	color: #ddd;

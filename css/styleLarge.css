@@ -6,6 +6,7 @@ email: eduardo.lopezarce@gmail.com
 /********GENERAL RULES********/
 /* rules for all index*/
 *{
+	font-family: 'Alegreya Sans', sans-serif;
 	margin:0px auto;
 	padding: 0px;
 	font-family: Helvetica, arial, sans-serif;
@@ -75,7 +76,8 @@ ul#navmenu li{
 }
 /* rules for MAIN ANCHOR element*/
 ul#navmenu a{
-	font-weight: bold;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 17px;
 	text-decoration: none;
 	display: block;
 	color: #ddd;/*#002F64;*/
@@ -494,6 +496,7 @@ ul#navmenu li:hover .sub1{
 }
 /***********RULES FOR SCROLLER**************/
 .cbp-so-scroller {
+	font-family: 'Alegreya Sans', sans-serif;
 	margin: 0;
 	overflow: hidden;
 }
@@ -540,6 +543,7 @@ ul#navmenu li:hover .sub1{
 }
 /* Text styling */
 .cbp-so-section h4 {
+	font-family: 'Alegreya Sans', sans-serif;
 	text-align: center;
 	font-size: 50px;
 	margin-left: 10px;
@@ -548,6 +552,8 @@ ul#navmenu li:hover .sub1{
 }
 
 .cbp-so-section .cbp-so-side-left h5 {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: normal;
 	padding-left: 10px;
 	font-size: 22px;
 	color: #ddd;
@@ -557,6 +563,8 @@ ul#navmenu li:hover .sub1{
 	text-align: left;
 }
 .cbp-so-section .cbp-so-side-right h5 {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: normal;
 	padding-right: 10px;
 	font-size: 22px;
 	color: #ddd;
@@ -731,6 +739,10 @@ ul#navmenu li:hover .sub1{
 }
 .section-content ul{
 	text-align: left;
+}
+.section-content li{	
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: normal;
 }
 .section-content h5 a{
 	text-decoration: none;
